@@ -73,7 +73,7 @@ Before we dive into the differences between these two methods, let's look at wha
 
 **Cosine Similarity**: Determines how vectors are related to each other by measuring the cosine angle between two vectors. The value also ranges from [-1,1], with -1 meaning that the two vectors are diametrically opposed, 0 meaning the two vectors are perpendicular to one another, and 1 meaning that the vectors are the same. Here is the formula in the context of user similarity:
 
-### $$ \text{cosine similarity}(u,v) = \frac{\sum_{i \in I_{uv}}{r_{ui}*r_{vi}}}{\sqrt{\sum_{i \in I_{uv} }{r_{ui}^{2}  }}  * \sqrt{\sum_{i \in I_{uv} }{r_{ui}^{2}  }}} $$
+### $$ \text{cosine similarity}(u,v) = \frac{\sum_{i \in I_{uv}}{r_{ui}*r_{vi}}}{\sqrt{\sum_{i \in I_{uv} }{r_{ui}^{2}  }}  * \sqrt{\sum_{i \in I_{uv} }{r_{vi}^{2}  }}} $$
 
 where u is a user and v is another user being compared to u. i represents each item being rated. I is the entire item set.
 
